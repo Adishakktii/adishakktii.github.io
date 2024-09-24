@@ -1,10 +1,152 @@
+# I'll update the HTML to include the Instagram links in the footer section.
+
+final_html_with_instagram_links = f"""
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Проверка страницы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADISHAKTII - Clothing Brand</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }}
+        header {{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }}
+        nav {{
+            margin: 0;
+            padding: 15px;
+            background-color: #444;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 15px;
+        }}
+        nav a {{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            white-space: nowrap;
+        }}
+        .container {{
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }}
+        .gallery {{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }}
+        .gallery img {{
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }}
+        .gallery img:hover {{
+            transform: scale(1.05);
+        }}
+        footer {{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }}
+        footer a {{
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }}
+        footer a:hover {{
+            text-decoration: underline;
+        }}
+        img {{
+            max-width: 100%;
+            height: auto;
+        }}
+    </style>
 </head>
 <body>
-    <h1>Проверка</h1>
-    <p>Если вы видите этот текст, значит, страница работает.</p>
+
+<header>
+    <h1>ADISHAKTII</h1>
+    <p>Исследуйте искусство моды и самовыражения через уникальную, сделанную вручную одежду.</p>
+</header>
+
+<nav>
+    <a href="#about">О бренде</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#music">Музыка</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>О бренде ADISHAKTII</h2>
+        <p>ADISHAKTII — это бренд одежды, рожденный из страсти к творчеству, духовности и природе. Каждое изделие
+        сделано вручную с заботой, объединяя художественные дизайны и экологичные материалы. Наша миссия — привнести 
+        гармонию, красоту и индивидуальность в каждый гардероб.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="data:image/jpeg;base64,{base64_img_1}" alt="Дизайн одежды 1">
+            <img src="data:image/jpeg;base64,{base64_img_2}" alt="Дизайн одежды 2">
+            <img src="data:image/jpeg;base64,{base64_img_3}" alt="Дизайн одежды 3">
+        </div>
+    </section>
+
+    <section id="music">
+        <h2>Музыка</h2>
+        <p>Слушайте музыку от ADISHAKTII:</p>
+        <ul>
+            <li><a href="https://soundcloud.com/simbahvoice" target="_blank">SoundCloud</a></li>
+            <li><a href="https://www.youtube.com/@ADISHAKKTII" target="_blank">YouTube</a></li>
+            <li><a href="https://zvonko.link/1828CA1" target="_blank">Zvonko Music</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Для вопросов, индивидуальных заказов или сотрудничества, свяжитесь с нами по электронной почте <strong>adishakktii@gmail.com</strong>.</p>
+    </section>
+</div>
+
+<footer>
+    <p>Следите за нами в Instagram:</p>
+    <p>
+        <a href="https://instagram.com/adishakktii" target="_blank">@adishakktii</a>
+        <a href="https://instagram.com/adishakktiii" target="_blank">@adishakktiii</a>
+    </p>
+    <p>&copy; 2024 ADISHAKTII. Все права защищены.</p>
+</footer>
+
 </body>
 </html>
+"""
+
+# Save the updated HTML content with Instagram links
+final_html_with_instagram_links_path = "/mnt/data/adishaktii_brand_page_with_instagram_links.html"
+with open(final_html_with_instagram_links_path, "w", encoding="utf-8") as file:
+    file.write(final_html_with_instagram_links)
+
+final_html_with_instagram_links_path
